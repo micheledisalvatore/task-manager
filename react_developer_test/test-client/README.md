@@ -1,4 +1,9 @@
-Adthena Test Client
+# Notes
+
+Check the preview of this project on [netlify](https://dreamy-elion-a482f4.netlify.com).
+
+Written some test cases for TasksList component.
+
 ================
 
 ### Prerequisites
@@ -39,11 +44,11 @@ provide).
 3. Run tests:
     ```
     npm test
-    ```    
+    ```
 4. Run using npm:
     ```
     npm start
     ```
 5. Your client will be available on port 8082. Go to **http://127.0.0.1:8082/** to test it.
-   
+
 6. You can stop the client using `Ctrl + C`. If you need to use the console for something else, you should open a new terminal tab or window.

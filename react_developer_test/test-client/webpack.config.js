@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const environment = process.env.NODE_ENV;
 const isDevelopment = environment === 'development';
@@ -97,6 +98,9 @@ module.exports = {
       },
       chunksSortMode: 'none',
     }),
+    new CopyPlugin([
+      { from: 'public', to: '', test: /([^/]+)\/(.+)\.jpg$/, },
+    ]),
   ],
   devServer: {
     contentBase: PATHS.public,

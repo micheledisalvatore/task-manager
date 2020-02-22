@@ -10,21 +10,21 @@ const TaskOne = () => {
       <h1>Task One</h1>
       <div className="buttons">
         <MyButton
-          imgUrl="whale.jpg"
+          imgUrl="/whale.jpg"
           alt="whale"
           selected="Whale"
           selection={selected}
           onClick={() => setSelected('Whale')}
         />
         <MyButton
-          imgUrl="cow.jpg"
+          imgUrl="/cow.jpg"
           alt="cow"
           selected="Cow"
           selection={selected}
           onClick={() => setSelected('Cow')}
         />
         <MyButton
-          imgUrl="hippo.jpg"
+          imgUrl="/hippo.jpg"
           alt="hippo"
           selected="Hippo"
           selection={selected}
@@ -48,15 +48,15 @@ const TaskOne = () => {
           </li>
           <li>
             {
-              `When you click on an animal tile (Whale, Cow or Hippo) e.g. Hippo then click the 
-            "Log my click to console" button then a corresponding message e.g. “You clicked: Hippo” 
+              `When you click on an animal tile (Whale, Cow or Hippo) e.g. Hippo then click the
+            "Log my click to console" button then a corresponding message e.g. “You clicked: Hippo”
             is logged to the Javascript console after 5 seconds.`
             }
           </li>
           <li>
             {
-              `When you click all three animal tiles, within 5 seconds, with a click of the 
-          "Log my click to console" button between each animal tile click, a corresponding message 
+              `When you click all three animal tiles, within 5 seconds, with a click of the
+          "Log my click to console" button between each animal tile click, a corresponding message
           is logged to the Javascript console for each animal tile.`
             }
           </li>
