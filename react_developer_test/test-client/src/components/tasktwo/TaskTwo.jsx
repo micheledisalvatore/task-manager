@@ -1,7 +1,23 @@
 import React from 'react';
+import { DataProvider } from '../../contexts/dataContext';
+import Form from './Form';
+import TasksList from './TasksList';
+import UserInfo from './UserInfo';
+import ErrorMsg from './ErrorMsg';
+import ThemeManager from './ThemeManager';
 
 const TaskTwo = () => (
   <div className="task">
+    <ThemeManager />
+    <DataProvider>
+      <>
+        <Form />
+        <ErrorMsg />
+        <UserInfo />
+        <TasksList />
+      </>
+    </DataProvider>
+
     <h1>Task Two</h1>
     <div className="content">
       <h4>Complete the following task:</h4>

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the basic component 1`] = `
+<div>
+  <ul
+    class="TasksList"
+    data-testid="list"
+  />
+</div>
+`;
+
+exports[`renders the component with 2 tasks 1`] = `
+<div>
+  <ul
+    class="TasksList"
+    data-testid="list"
+  >
+    <li
+      class="TasksList__Item"
+      data-testid="item"
+    >
+      <div
+        class="TasksList__Item__Tick "
+        data-testid="tick"
+      />
+      Foo title
+    </li>
+    <li
+      class="TasksList__Item"
+      data-testid="item"
+    >
+      <div
+        class="TasksList__Item__Tick TasksList__Item__Tick--visible"
+        data-testid="tick"
+      />
+      Bar title
+    </li>
+  </ul>
+</div>
+`;
